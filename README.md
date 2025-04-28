@@ -36,9 +36,9 @@ java printer.Main
 Preparing File3
 Preparing File1
 Preparing File2
-...Prinring File3
-...Prinring File2
-...Prinring File1
+...Printing File3
+...Printing File2
+...Printing File1
 File1 finished downloading.
 File2 finished downloading.
 File3 finished downloading.
