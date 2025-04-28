@@ -7,7 +7,7 @@ public class Printer {
     // print the document
     synchronized void printDocument(String name) {
         Processing.process();
-        System.out.println("Prinring " + name);
+        System.out.println("Printing " + name);
         isBusy = true;
         try {
             while (!isBusy) {
