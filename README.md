@@ -34,26 +34,6 @@ javac printer/*.java
 java printer.Main
 ```
 
-## 📋 Project Flow
-
-```mermaid
-flowchart TD
-    A[Start Main Class] --> B[Create Printer Instance]
-    B --> C[Create User Threads]
-    C --> D[Start Each User Thread]
-    D --> E[User Thread Prepares File]
-    E --> F[User Thread Requests Printer Access]
-    F --> G{Is Printer Busy?}
-    G -- No --> H[Print the Document]
-    G -- Yes --> I[Wait Until Printer Is Free]
-    I --> H
-    H --> J[Notify Waiting Threads]
-    J --> K[User Thread Completes]
-    K --> L[Main Thread Waits with Join()]
-    L --> M[All Documents Printed]
-    M --> N[End Program]
-```
-
 ## Example Output
 
 ```
